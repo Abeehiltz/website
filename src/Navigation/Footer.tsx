@@ -1,6 +1,5 @@
 import {GitHub, LinkedIn} from '@mui/icons-material';
 import {Container, Divider, IconButton, Stack, Typography} from '@mui/material';
-import {FC} from 'react';
 
 function ContactPart() {
   return (
