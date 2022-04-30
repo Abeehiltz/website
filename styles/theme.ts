@@ -1,17 +1,20 @@
-import {createTheme} from '@mui/material/styles';
 import {red} from '@mui/material/colors';
+import {createTheme} from '@mui/material/styles';
 
 // Create a theme instance.
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#556cd6',
+      main: '#B16300',
     },
     secondary: {
-      main: '#19857b',
+      main: '#9c27b0',
     },
     error: {
       main: red.A400,
+    },
+    text: {
+      primary: '#000',
     },
   },
 });
@@ -21,10 +24,10 @@ const darkTheme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      main: '#556cd6',
+      main: '#fbc02d',
     },
     secondary: {
-      main: '#19857b',
+      main: '#ba68c8',
     },
     error: {
       main: red.A400,
