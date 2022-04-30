@@ -4,10 +4,16 @@ import {Container, Divider, IconButton, Stack, Typography} from '@mui/material';
 function ContactPart() {
   return (
     <Stack direction="row">
-      <IconButton href="https://github.com/Abeehiltz">
+      <IconButton
+        href="https://github.com/Abeehiltz"
+        aria-label="github profile"
+      >
         <GitHub />
       </IconButton>
-      <IconButton href="https://www.linkedin.com/in/elizabeth-bricout">
+      <IconButton
+        href="https://www.linkedin.com/in/elizabeth-bricout"
+        aria-label="linkedin profile"
+      >
         <LinkedIn />
       </IconButton>
     </Stack>

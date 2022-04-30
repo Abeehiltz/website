@@ -1,4 +1,4 @@
-import {DarkMode, GitHub, LinkedIn} from '@mui/icons-material';
+import {DarkMode, GitHub, LightMode, LinkedIn} from '@mui/icons-material';
 import {
   AppBar,
   Button,
@@ -9,7 +9,7 @@ import {
 } from '@mui/material';
 import Link from 'next/link';
 import {useContext} from 'react';
-import {ColorModeContext} from '../../ContextReact/DynamicThemeProvider';
+import {ColorModeContext} from '../../contextReact/DynamicThemeProvider';
 
 function NamePart() {
   return (
@@ -17,7 +17,6 @@ function NamePart() {
       <Typography color="primary" fontWeight={600} fontSize="1.3rem">
         Elizabeth BRICOUT
       </Typography>
-      <Typography>Full-Stack Developer</Typography>
     </Stack>
   );
 }
@@ -26,21 +25,23 @@ function MenuPart() {
   return (
     <Stack
       direction="row"
-      justifyContent="space-evenly"
+      justifyContent="flex-end"
       alignItems="center"
+      spacing={10}
+      marginRight={10}
       flex={1}
     >
       <Link href="#" passHref>
-        <Button>About</Button>
+        <Button aria-label="about myself button">About</Button>
       </Link>
       <Link href="#" passHref>
-        <Button>Projects</Button>
+        <Button aria-label="my projects button">Projects</Button>
       </Link>
       <Link href="#" passHref>
-        <Button>Experiences</Button>
+        <Button aria-label="my experiences button">Experiences</Button>
       </Link>
       <Link href="#" passHref>
-        <Button>Contact</Button>
+        <Button aria-label="contact me button">Contact</Button>
       </Link>
     </Stack>
   );
@@ -51,14 +52,29 @@ function ContactPart() {
 
   return (
     <Stack direction="row">
-      <IconButton href="https://github.com/Abeehiltz">
+      <IconButton
+        href="https://github.com/Abeehiltz"
+        aria-label="github profile"
+      >
         <GitHub />
       </IconButton>
-      <IconButton href="https://www.linkedin.com/in/elizabeth-bricout">
+      <IconButton
+        href="https://www.linkedin.com/in/elizabeth-bricout"
+        aria-label="linkedin profile"
+      >
         <LinkedIn />
       </IconButton>
-      <IconButton onClick={() => colorMode.toggleColorMode()}>
-        <DarkMode />
+      <IconButton
+        aria-label="switch theme button"
+        onClick={() => {
+          colorMode.toggleColorMode();
+        }}
+        sx={{
+          border: theme => `1px solid ${theme.palette.primary.main}`,
+          borderRadius: 2,
+        }}
+      >
+        {colorMode.mode === 'light' ? <DarkMode /> : <LightMode />}
       </IconButton>
     </Stack>
   );
@@ -69,8 +85,11 @@ export default function Navbar() {
     <AppBar
       position="relative"
       component="nav"
-      color="background"
       elevation={0}
+      sx={{
+        backgroundColor: theme => theme.palette.background.paper,
+        color: theme => theme.palette.text.primary,
+      }}
     >
       <Toolbar>
         <NamePart />
