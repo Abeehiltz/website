@@ -9,7 +9,13 @@ export default function GithubCommits(props) {
       <Typography component="h2" variant="h3">
         Latest Code
       </Typography>
-      <Stack direction="row" flexWrap="wrap" spacing={3} marginTop={2}>
+      <Stack
+        direction="row"
+        paddingTop={2}
+        height="100%"
+        flexWrap={'wrap'}
+        sx={{gap: 1}}
+      >
         {githubRepositories &&
           githubRepositories.map((repo, index) => (
             <GithubRepoCard key={index} githubRepo={repo} />
