@@ -27,11 +27,9 @@ export default function MyApp(props: MyAppProps) {
       <DynamicThemeProvider>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
-        <Stack height="100vh">
-          <Nav />
-          <Component {...pageProps} />
-          <Footer />
-        </Stack>
+        <Nav />
+        <Component {...pageProps} />
+        <Footer />
       </DynamicThemeProvider>
     </CacheProvider>
   );
