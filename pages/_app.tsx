@@ -1,5 +1,5 @@
 import {CacheProvider, EmotionCache} from '@emotion/react';
-import {CssBaseline, Stack} from '@mui/material';
+import {CssBaseline, Stack, Box} from '@mui/material';
 import {AppProps} from 'next/app';
 import Head from 'next/head';
 import * as React from 'react';
@@ -27,9 +27,13 @@ export default function MyApp(props: MyAppProps) {
       <DynamicThemeProvider>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
-        <Nav />
-        <Component {...pageProps} />
-        <Footer />
+        <Stack minHeight="100vh">
+          <Nav />
+          <Box sx={{flex: 1}}>
+            <Component {...pageProps} />
+          </Box>
+          <Footer />
+        </Stack>
       </DynamicThemeProvider>
     </CacheProvider>
   );
