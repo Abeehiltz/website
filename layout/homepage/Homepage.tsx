@@ -8,8 +8,8 @@ export default function Homepage(props) {
   const {githubRepositories} = props;
   return (
     <Box height="100%">
+      <MainPart />
       <Container maxWidth="lg" sx={{width: '80%'}}>
-        <MainPart />
         <GithubCommits githubRepositories={githubRepositories} />
         <Stack margin={10} justifyContent="center" alignItems="center">
           <Link href="#" passHref>

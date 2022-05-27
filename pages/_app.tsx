@@ -1,5 +1,5 @@
 import {CacheProvider, EmotionCache} from '@emotion/react';
-import {CssBaseline, Stack, Box} from '@mui/material';
+import {Box, CssBaseline, Stack} from '@mui/material';
 import {AppProps} from 'next/app';
 import Head from 'next/head';
 import * as React from 'react';

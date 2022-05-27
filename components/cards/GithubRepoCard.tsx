@@ -12,7 +12,7 @@ export default function GithubRepoCard(props) {
   const {githubRepo} = props;
 
   return (
-    <Card sx={{maxWidth: 350, display: 'flex', flexDirection: 'column'}}>
+    <Card sx={{width: 350, display: 'flex', flexDirection: 'column'}}>
       <CardHeader title={githubRepo.name} />
       <CardContent sx={{flex: 1}}>
         <Typography component="h3" variant="body2">
