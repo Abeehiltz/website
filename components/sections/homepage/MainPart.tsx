@@ -23,7 +23,9 @@ export default function MainPart(props) {
         justifyContent="center"
         position="absolute"
         bottom={10}
-        left="50%"
+        left="0"
+        right="0"
+        margin="0 auto"
       >
         <BouncingArrow sx={{fontSize: 40}} color="primary" />
         <Typography variant="caption" color="primary">
