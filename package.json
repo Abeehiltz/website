@@ -1,42 +1,4 @@
 {
   "name": "website",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "gts lint",
-    "clean": "gts clean",
-    "compile": "tsc",
-    "fix": "gts fix",
-    "prepare": "yarn run compile",
-    "pretest": "yarn run compile",
-    "posttest": "yarn run lint"
-  },
-  "dependencies": {
-    "@emotion/cache": "latest",
-    "@emotion/react": "^11.9.0",
-    "@emotion/server": "latest",
-    "@emotion/styled": "^11.8.1",
-    "@mui/icons-material": "^5.6.2",
-    "@mui/material": "^5.6.3",
-    "next": "^12.1.5",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-    "@types/node": "^17.0.30",
-    "@types/react": "^18.0.8",
-    "@typescript-eslint/eslint-plugin": "^5.21.0",
-    "@typescript-eslint/parser": "^5.21.0",
-    "eslint": "^7.32.0",
-    "eslint-config-next": "^12.1.5",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "gts": "^3.1.0",
-    "prettier": "^2.6.2",
-    "prettier-eslint": "^14.0.2",
-    "typescript": "^4.6.4"
-  }
+  "packageManager": "yarn@3.2.1"
 }
