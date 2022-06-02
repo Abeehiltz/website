@@ -1,3 +1,4 @@
 {
-  "extends": ["next", "./node_modules/gts/"]
+  "extends": ["next", "./node_modules/gts/"],
+  "rules": {"react/no-unescaped-entities": 0}
 }

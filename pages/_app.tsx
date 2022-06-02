@@ -23,6 +23,7 @@ export default function MyApp(props: MyAppProps) {
       <Head>
         <title>Accueil - Elizabeth BRICOUT</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
       </Head>
       <DynamicThemeProvider>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
