@@ -38,5 +38,3 @@ export default function MyApp(props: MyAppProps) {
 		</CacheProvider>
 	);
 }
-
-export { MyAppProps };
