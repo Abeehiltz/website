@@ -55,7 +55,7 @@ export default function HeroPart(props: WrapperProps) {
 				</Box>
 				<Box position="relative" width="100%">
 					<Image
-						src="/laptop.png"
+						src="/laptop.webp"
 						layout="fill"
 						objectFit="contain"
 						alt="laptop to represent coding with some coffee"

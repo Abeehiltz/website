@@ -2,6 +2,7 @@ import { Box, Stack, Typography } from '@mui/material';
 import GithubRepoCard from '../../cards/GithubRepoCard';
 
 interface WrapperProps {
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	githubRepositories: any;
 	refForScroll: React.MutableRefObject<HTMLElement | undefined>;
 }
