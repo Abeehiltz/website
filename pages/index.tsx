@@ -3,7 +3,7 @@ import Homepage from '../layout/homepage/Homepage';
 
 function Home(props) {
 	const { githubRepositories } = props;
-	const title = 'Elizabeth Bricout - Developer, writer, cybersecurity';
+	const title = 'Elizabeth Bricout - Developer, writer, cybersecurity consulting';
 	const description =
 		"Developer for a year and studying cybersecurity, I'm also a writer during my free time. Get in touch with me to know more!";
 	return (

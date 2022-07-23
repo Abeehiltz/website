@@ -1,7 +1,12 @@
 import { Box, Stack, Typography } from '@mui/material';
 import GithubRepoCard from '../../cards/GithubRepoCard';
 
-export default function GithubCommits(props) {
+interface WrapperProps {
+	githubRepositories: any;
+	refForScroll: React.MutableRefObject<HTMLElement | undefined>;
+}
+
+export default function GithubCommits(props: WrapperProps) {
 	const { githubRepositories, refForScroll } = props;
 
 	return (

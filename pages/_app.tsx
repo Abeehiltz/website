@@ -2,7 +2,6 @@ import { CacheProvider, EmotionCache } from '@emotion/react';
 import { Box, CssBaseline, Stack } from '@mui/material';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import * as React from 'react';
 import DynamicThemeProvider from '../contextReact/DynamicThemeProvider';
 import Footer from '../src/Navigation/Footer';
 import Nav from '../src/Navigation/Navbar';
@@ -39,3 +38,5 @@ export default function MyApp(props: MyAppProps) {
 		</CacheProvider>
 	);
 }
+
+export { MyAppProps };

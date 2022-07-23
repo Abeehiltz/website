@@ -3,11 +3,11 @@ import { Box, Button, Container, Stack } from '@mui/material';
 import Link from 'next/link';
 import React from 'react';
 import GithubCommits from '../../components/sections/homepage/GithubCommits';
-import MainPart from '../../components/sections/homepage/MainPart';
+import MainPart from '../../components/sections/homepage/HeroPart';
 
 export default function Homepage(props) {
 	const { githubRepositories } = props;
-	const refBlock = React.useRef();
+	const refBlock = React.useRef<HTMLElement>();
 
 	return (
 		<Box height="100%">
